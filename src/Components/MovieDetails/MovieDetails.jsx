@@ -25,7 +25,7 @@ const MovieDetails = () => {
     <div className={styles.container}>
       <img src={movieData.Poster} alt={`${movieData.Title} poster`} />
       <div className={`${styles.text}`}>
-        <h1>{movieData.Title}</h1>
+        <h1>{movieData.Title} <span>{movieData.Year}</span></h1>
         {starRating(parseInt(movieData.imdbRating))}
         <div className={`${styles.dataRow}`}>
           <h5>Genre:</h5><p>{movieData.Genre}</p>
