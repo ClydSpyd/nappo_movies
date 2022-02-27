@@ -1,0 +1,83 @@
+// @import '../../Styles/main.scss';
+
+.container{
+  display: flex;
+  // align-items: center;
+  width: 85vw;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  img{
+    height: 450px;
+    object-fit: contain;
+  }
+
+  .text{
+    box-sizing:border-box;
+    padding:20px;
+
+    h1{
+      margin:10px 0 5px 0;
+    }
+  }
+
+  .dataRow{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    h5{
+      color: #333333;
+      margin:0;
+      margin-right: 5px;
+    }
+    p{
+      color: #858585;
+      margin:0;
+      font-size: 14px;
+    }
+  }
+
+  p.plot{
+    color: #333333;
+    font-weight: 300;
+  }
+
+  .ratings{
+    display: flex;
+
+    .item{
+      margin-right: 20px;
+
+      .logo{
+        height:40px;
+        width:40px;
+        margin-bottom: 5px;
+
+        &.rt{
+          background: url('../../Assets/Images/rotten_tomatoes_logo.png') no-repeat center;
+          background-size: contain;
+        }
+
+        &.imdb{
+          background: url('../../Assets/Images/imdb_logo.svg') no-repeat center;
+          background-size: contain;
+        }
+
+        &.meta{
+          background: url('../../Assets/Images/metacritic_logo.png') no-repeat center;
+          background-size: contain;
+        }
+      }
+
+      h5{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+
+  @media (max-width:800px){
+    flex-direction: column;
+  }
+}

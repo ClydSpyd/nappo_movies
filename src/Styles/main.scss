@@ -1,0 +1,94 @@
+@import './fonts.scss';
+
+:root{
+  --viewportHeight : 100vh;
+  --viewportMinus : 100vh;
+  --appFont: 'DM sans'
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: #333333;
+  font-family: var(--appFont);
+}
+
+a, a>* {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+input, textarea{
+  border-radius: 5px;
+
+  &.noFocus{
+    -webkit-box-shadow: none !important; 
+    box-shadow: none !important;
+    outline: none !important;
+  }
+}
+
+
+
+.appWrapper{
+  max-height: var(--viewportHeight);
+  height: var(--viewportHeight);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-sizing:border-box;
+  padding:0 50px;
+  // border:1px solid red;
+
+  .navBar{
+    min-height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    .logo{
+      height:50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+      img{
+        height: 30px;
+        position: relative;
+        top: -5px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .mainSwitch{
+    width: 100%;
+    max-width: 1200px;
+    box-sizing:border-box;
+    padding:0 40px;
+  }
+
+  .stars{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .star{
+      height:30px;
+      width:30px;
+      background: url('../Assets/Icons/star_hollow.svg') no-repeat center;
+      background-size: 25px;
+      
+      &.solid{
+        background: url('../Assets/Icons/star_solid.svg') no-repeat center;
+        background-size: 25px;
+
+      }
+    }
+  }
+}

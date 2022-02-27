@@ -1,0 +1,38 @@
+.container{
+  width: 30%;
+  min-width: 300px;
+  padding: 10px 0;
+  margin: 5px;
+  border:1px solid #cacaca;
+  border-radius: 3px;
+  position: relative;
+  opacity: 0;
+  bottom: -6px;
+  transition: .3s all ease-out;
+  
+  &.show{
+    opacity: 1;
+    bottom: 0;
+    transition: .2s all ease;
+  }
+  
+  &:hover{
+    bottom: 3px;
+  }
+
+  img{
+    height:250px;
+    width:250px;
+    object-fit: contain;
+  }
+
+
+  h5{
+    margin: 8px 0;
+
+    span{
+      color: #858585;
+      font-size: 9px;
+    }
+  }
+}
