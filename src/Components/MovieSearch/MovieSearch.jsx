@@ -17,6 +17,7 @@ const MovieSearch = () => {
   const handleSearch = async e => {
     e.preventDefault()
     if(textInput=="")return
+    setPage(1)
     const { Search, Error, totalResults } = await callApi(textInput, 1)
     setMovies(Error || {items: Search, totalResults})
     setSearchTerm(textInput)
