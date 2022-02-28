@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export const getFromApi = async (query, page = 1 ) => {
+export const getFromApi = async (query) => {
   
   const url = `http://www.omdbapi.com/?apikey=9d4b151c&${query}`
   console.log(url)
